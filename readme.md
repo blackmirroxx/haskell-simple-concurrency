@@ -27,9 +27,9 @@ You can also open modules in GHCI to play around with them in a REPL:
     > :load src/Threads.hs
     > main
 
-Note that you cannot compile the example files directly, but I have provided a `Main.hs` file which runs all the examples, and which can be compiled into an executable if you wish.
+Note that you cannot compile the example files directly, but I have provided a `Main.hs` file which runs all the examples, and which can be compiled into an executable if you wish. The program stack is part of "The Haskell tool stack" and can be installed seperately. Stack is a hidden dependacy, but get involved indirectly. 
 
-    $ stack ghc --make -threaded Main.hs
+    $ ghc --make -threaded Main.hs
     $ ./Main
 
 ## A brief word on syntax
